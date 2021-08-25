@@ -2,11 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Beam Spacing Calculator</title>
+        <style type = "text/css">
+            .boxed {
+                border: 1px black;
+            }
+        </style>
     </head>
     <body>
         <script src="main.js"></script>
-        <p> Total Width </p>
+        <div class = "boxed">
+            <p> <b>Total Width</b> </p>
         <p>
             <label>Feet</label>
             <input id="inputFeetTotal" type="number" 
@@ -17,19 +23,23 @@
             <input id="inputInchesTotal" type="number" 
             placeholder="Inches"> 
         </p>
-        <p> Bar Width </p>
+        </div>
+        <div class = "boxed">
+            <p> <b>Bar Width </b> </p>
         <p>
             <label>Inches</label>
             <input id="inputInchesBar" type="string" 
             placeholder="Bar Width (in)"> 
         </p>
+        </div>
         <p> 
             <button id="computeButton" type="button"onclick="computeVal();">
                 Convert
             </button>
         </p>
-        <p>Number of Beams: <span id="outputBeam"></span></p>
-        <p>Number of Spaces: <span id="outputSpace"></span></p>
+        <hr>
+        <p><b>Number of Beams</b>: <span id="outputBeam"></span></p>
+        <p>Number of Gaps: <span id="outputSpace"></span></p>
         <p>Gap Width (in): <span id="outputGap"></span></p>
         <p>Next 1/16th: <span id="outputSixteen"></span></p>
     </body>
