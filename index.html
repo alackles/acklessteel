@@ -6,19 +6,30 @@
     </head>
     <body>
         <script src="main.js"></script>
+        <p> Total Width </p>
         <p>
             <label>Feet</label>
-            <input id="inputFeet" type="number" placeholder="Feet"> 
+            <input id="inputFeetTotal" type="number" 
+            placeholder="Feet"> 
         </p>
         <p>
             <label>Inches</label>
-            <input id="inputInches" type="number" placeholder="Inches"> 
+            <input id="inputInchesTotal" type="number" 
+            placeholder="Inches"> 
+        </p>
+        <p> Bar Width </p>
+        <p>
+            <label>Inches</label>
+            <input id="inputInchesBar" type="string" 
+            placeholder="Bar Width (in)"> 
         </p>
         <p> 
-            <button id="computeVal" type="button">Convert</button>
+            <button id="computeButton" type="button"onclick="computeVal();">
+                Convert
+            </button>
         </p>
         <p>Number of Beams: <span id="outputBeam"></span></p>
         <p>Number of Spaces: <span id="outputSpace"></span></p>
-        <p>Gap Width: <span id="outputGap"></span></p>
+        <p>Gap Width (in): <span id="outputGap"></span></p>
     </body>
 </html>
