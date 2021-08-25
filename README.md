@@ -1,1 +1,1 @@
-Beam caluclator
+Beam calculator
